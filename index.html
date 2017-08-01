@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PERTEMUAN 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="board">
+		<ul class="card">
+			<li>
+				<p>Makan</p>
+			</li>
+			<li>
+				<p>Coding</p>
+			</li>
+			<li>
+				<p>Skripsi</p>
+			</li>
+		</ul>
+
+		<ul class="card">
+			<li>
+				<p>Nonton</p>
+			</li>
+			<li>
+				<p>Facebook</p>
+			</li>
+			<li>
+				<p>Minum</p>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		//childnya doank yang bisa gerak
+		$(".card").sortable({
+			connectWith : ".card"
+		});
+		$(".board").sortable();
+
+	</script>
+</body>
+</html>
